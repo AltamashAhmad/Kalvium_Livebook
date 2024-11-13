@@ -18,31 +18,138 @@ const initialData = {
                         {
                             title: "What is Artificial Intelligence?",
                             content: `
-                                Artificial Intelligence (AI) is the simulation of human intelligence by machines. 
-                                
-                                Key Concepts:
-                                • Intelligence: The ability to acquire and apply knowledge
-                                • Artificial: Human-made, simulated behavior
-                                • Machine Learning: Systems that can learn from experience
-                                
-                                Types of AI:
-                                1. Narrow AI (Weak AI)
-                                   - Designed for specific tasks
-                                   - Examples: Siri, Chess computers
-                                
-                                2. General AI (Strong AI)
-                                   - Matches human intelligence
-                                   - Still theoretical
-                                
-                                3. Super AI
-                                   - Surpasses human intelligence
-                                   - Currently hypothetical
-                                
-                                Why Study AI?
-                                • Growing field with numerous applications
-                                • Shapes future technology
-                                • High demand for AI professionals
-                                • Impacts various industries
+<div class="topic-content">
+    <h1 class="topic-title">What is Artificial Intelligence?</h1>
+    
+    <div class="topic-introduction">
+        <p>Artificial Intelligence (AI) is the simulation of human intelligence by machines.</p>
+    </div>
+
+    <div class="concept-section">
+        <h2>Key Concepts</h2>
+        <ul class="concept-list">
+            <li><span class="concept-term">Intelligence:</span> The ability to acquire and apply knowledge</li>
+            <li><span class="concept-term">Artificial:</span> Human-made, simulated behavior</li>
+            <li><span class="concept-term">Machine Learning:</span> Systems that can learn from experience</li>
+        </ul>
+    </div>
+
+    <div class="types-section">
+        <h2>Types of AI</h2>
+        
+        <div class="ai-type">
+            <h3>1. Narrow AI (Weak AI)</h3>
+            <ul>
+                <li>Designed for specific tasks</li>
+                <li>Examples: Siri, Chess computers</li>
+            </ul>
+        </div>
+
+        <div class="ai-type">
+            <h3>2. General AI (Strong AI)</h3>
+            <ul>
+                <li>Matches human intelligence</li>
+                <li>Still theoretical</li>
+            </ul>
+        </div>
+
+        <div class="ai-type">
+            <h3>3. Super AI</h3>
+            <ul>
+                <li>Surpasses human intelligence</li>
+                <li>Currently hypothetical</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="why-study-section">
+        <h2>Why Study AI?</h2>
+        <ul class="benefits-list">
+            <li>Growing field with numerous applications</li>
+            <li>Shapes future technology</li>
+            <li>High demand for AI professionals</li>
+            <li>Impacts various industries</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.topic-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.topic-title {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.topic-introduction {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #2980b9;
+    margin: 30px 0 15px 0;
+}
+
+h3 {
+    color: #16a085;
+    margin: 20px 0 10px 0;
+}
+
+.concept-term {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+.ai-type {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+}
+
+.benefits-list li {
+    background: #f5f6fa;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: transform 0.2s;
+}
+
+.benefits-list li:hover {
+    transform: translateX(10px);
+    background: #e8f0fe;
+}
+</style>
                             `
                         },
                         {
