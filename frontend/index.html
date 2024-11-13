@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalvium LiveBooks</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="assets/images/kalvium-logo.png" alt="Kalvium Logo" class="logo">
+            <h1>Kalvium LiveBooks</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search courses...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <button id="darkModeToggle" class="theme-toggle"> 
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section class="courses-container">
+            <h2>Stack 1</h2>
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Courses will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Add this before closing body tag -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Developer</h3>
+                <p>Made with ❤️ by Altamash Ahmad</p>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> altamashahmadajaz2@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9648031331</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/AltamashAhmad" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/altamash9648/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Add this before closing body tag, after other scripts -->
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,264 @@
+/* Add these styles at the top */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Course Details Page Styling */
+.course-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex: 1;
+    width: 100%;
+}
+
+.course-header {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.course-info {
+    flex: 1;
+}
+
+.course-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.course-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course-meta span {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.course-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    flex-shrink: 0;
+}
+
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.module {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    background-color: var(--card-background);
+}
+
+.module-header {
+    padding: 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.module-content {
+    display: none;
+    background-color: var(--card-background);
+    border-radius: 0 0 8px 8px;
+    margin-top: 2px;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.module-content.active {
+    display: block;
+    padding: 1.2rem;
+    opacity: 1;
+}
+
+.module-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.module-content li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.module-content li:last-child {
+    border-bottom: none;
+}
+
+.module-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.topic-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.topic-checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.topic-text {
+    flex: 1;
+}
+
+.course-progress {
+    margin-top: 1rem;
+}
+
+.course-progress-container {
+    height: 6px;
+    background-color: var(--background-color);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.course-progress-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.course-progress-text {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+}
+
+/* Add breadcrumb styles */
+.breadcrumb {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 0 2rem;
+    color: var(--text-color);
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb i {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Back button styles */
+.back-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+/* Floating progress indicator */
+.floating-progress {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.progress-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.progress-circle:hover {
+    transform: scale(1.1);
+}
+
+.progress-percentage {
+    color: white;
+    font-weight: bold;
+}
+
+/* Add animation for completed topics */
+.topic-checkbox:checked + .topic-text {
+    color: var(--primary-color);
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+/* Add module completion indicator */
+.module-header.completed {
+    background-color: #4CAF50;
+}
+
+.module-header.completed::after {
+    content: '✓';
+    margin-left: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .course-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .course-meta {
+        justify-content: center;
+    }
+}

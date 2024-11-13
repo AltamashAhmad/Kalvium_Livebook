@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Kalvium Books</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1>Kalvium LiveBooks</h1>
+        </div>
+        <button id="darkModeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="index.html">Courses</a>
+        <i class="fas fa-chevron-right"></i>
+        <span id="currentCourse">Course Details</span>
+    </div>
+
+    <div class="course-container">
+        <div id="courseDetails" class="course-details">
+            <div class="course-header"></div>
+            <div class="course-content">
+                <div class="modules-list"></div>
+                <div class="topic-content-display">
+                    <h2>Select a topic to view content</h2>
+                    <div class="content-area"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-progress">
+            <div class="progress-circle">
+                <span class="progress-percentage">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Developer</h3>
+                <p>Made with ❤️ by Altamash Ahmad</p>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> altamashahmadajaz2@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9648031331</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/AltamashAhmad" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/altamash9648/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts/course-details.js"></script>
+    <script src="scripts/theme.js"></script>
+</body>
+</html> 
