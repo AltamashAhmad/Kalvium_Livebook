@@ -76,7 +76,7 @@ body {
 
 .search-container input {
     width: 100%;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 2.5rem 0.8rem 1rem;
     border: none;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -96,10 +96,11 @@ body {
 
 .search-icon {
     position: absolute;
-    right: 10px;
+    right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    color: #666;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
 }
 
 .theme-toggle {
@@ -293,4 +294,25 @@ main {
 
 .error {
     color: #ff4444;
+}
+
+/* Add these styles for search functionality */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.no-results h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.no-results p {
+    color: var(--text-color);
+    opacity: 0.7;
 }

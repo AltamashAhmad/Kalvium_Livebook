@@ -1,9 +1,13 @@
 const API_URL = 'http://localhost:5001/api';
 
+// Store all courses globally so we can filter them
+let allCourses = [];
+
 async function fetchCourses() {
     try {
         const response = await fetch(`${API_URL}/courses`);
         const data = await response.json();
+        allCourses = data; // Store all courses
         return data;
     } catch (error) {
         console.error('Error fetching courses:', error);
@@ -33,6 +37,44 @@ function createCourseCard(course) {
     return card;
 }
 
+// Add search functionality
+function setupSearch() {
+    const searchInput = document.getElementById('searchInput');
+    
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        const filteredCourses = allCourses.filter(course => {
+            return (
+                course.title.toLowerCase().includes(searchTerm) ||
+                course.description.toLowerCase().includes(searchTerm)
+            );
+        });
+        
+        renderFilteredCourses(filteredCourses);
+    });
+}
+
+// Function to render filtered courses
+function renderFilteredCourses(courses) {
+    const coursesGrid = document.getElementById('coursesGrid');
+    
+    if (courses.length === 0) {
+        coursesGrid.innerHTML = `
+            <div class="no-results">
+                <h3>No courses found</h3>
+                <p>Try different search terms</p>
+            </div>
+        `;
+        return;
+    }
+
+    coursesGrid.innerHTML = '';
+    courses.forEach(course => {
+        const card = createCourseCard(course);
+        coursesGrid.appendChild(card);
+    });
+}
+
 async function renderCourses() {
     const coursesGrid = document.getElementById('coursesGrid');
     
@@ -49,6 +91,16 @@ async function renderCourses() {
         // Clear loading spinner
         coursesGrid.innerHTML = '';
         
+        if (courses.length === 0) {
+            coursesGrid.innerHTML = `
+                <div class="no-results">
+                    <h3>No courses available</h3>
+                    <p>Please check back later</p>
+                </div>
+            `;
+            return;
+        }
+
         courses.forEach(course => {
             const card = createCourseCard(course);
             coursesGrid.appendChild(card);
@@ -63,4 +115,7 @@ async function renderCourses() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', renderCourses); 
+document.addEventListener('DOMContentLoaded', () => {
+    renderCourses();
+    setupSearch();
+}); 
