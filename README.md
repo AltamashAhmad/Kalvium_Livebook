@@ -18,7 +18,7 @@ Kalvium Livebook is an interactive platform designed to enhance learning experie
 ### Frontend
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/kalvium_livebook.git
+   git clone https://github.com/AltamashAhmad/Kalvium_Livebook.git
    ```
 2. Navigate to the frontend directory:
    ```bash
