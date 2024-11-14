@@ -1,0 +1,83 @@
+.form-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.notification {
+    display: none; /* Hidden by default */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.notification.success {
+    background-color: #4CAF50; /* Green for success */
+}
+
+.notification.error {
+    background-color: #f44336; /* Red for error */
+} 
