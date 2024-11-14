@@ -20,14 +20,6 @@ Kalvium Livebook is an interactive platform designed to enhance learning experie
    ```bash
    git clone https://github.com/AltamashAhmad/Kalvium_Livebook.git
    ```
-2. Navigate to the frontend directory:
-   ```bash
-   cd kalvium_livebook/frontend
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
 
 ### Backend
 1. Navigate to the backend directory:
@@ -38,13 +30,20 @@ Kalvium Livebook is an interactive platform designed to enhance learning experie
    ```bash
    npm install
    ```
-
+   ```bash
+     brew tap mongodb/brew
+     brew install mongodb-community
+   ```
+3. Seed the courses
+    ```bash
+   node seed.js
+   ```
 ## Usage
 To start the frontend and backend servers, run the following commands in separate terminal windows:
 
 ### Frontend
 ```bash
-npm start
+Open with Live Server
 ```
 
 ### Backend
@@ -58,9 +57,3 @@ npm start
 3. Make your changes and commit them (`git commit -m 'Add new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-- Special thanks to the contributors and the open-source community for their support and resources.
