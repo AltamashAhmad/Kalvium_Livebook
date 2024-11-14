@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Content - Kalvium LiveBooks</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/course-details.css">
+    <link rel="stylesheet" href="styles/topic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="javascript:history.back()" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1>Kalvium LiveBooks</h1>
+        </div>
+        <button id="darkModeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="#" id="courseBreadcrumb">Course</a>
+        <i class="fas fa-chevron-right"></i>
+        <span id="topicBreadcrumb">Topic</span>
+    </div>
+
+    <main class="topic-details">
+        <div class="topic-content">
+            <h1 id="topicTitle">Topic Title</h1>
+            <div id="topicContent" class="content-area">
+                Loading content...
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/topic.js"></script>
+</body>
+</html> 

@@ -1,0 +1,73 @@
+{
+    "title": "Data Science Fundamentals",
+    "description": "Learn the core concepts of data science, from statistics to machine learning",
+    "image": "http://localhost:5001/assets/images/Data_Science_Fundamentals.png",
+    "moduleCount": 4,
+    "duration": "8 weeks",
+    "modules": [
+        {
+            "title": "Introduction to Data Science",
+            "topics": [
+                {
+                    "title": "What is Data Science?",
+                    "content": "Understanding Data Science:\n\n1. Core Components\n   • Statistics\n   • Programming\n   • Domain Knowledge\n   • Data Analysis\n\n2. Data Science Process\n   • Data Collection\n   • Data Cleaning\n   • Analysis\n   • Visualization\n   • Communication"
+                },
+                {
+                    "title": "Python for Data Science",
+                    "content": "Essential Python Libraries:\n\n1. NumPy\n   • Arrays\n   • Mathematical Operations\n   • Linear Algebra\n\n2. Pandas\n   • DataFrames\n   • Data Manipulation\n   • Data Analysis"
+                }
+            ]
+        },
+        {
+            "title": "Data Analysis",
+            "topics": [
+                {
+                    "title": "Exploratory Data Analysis",
+                    "content": "Understanding your data through visualization and statistics"
+                },
+                {
+                    "title": "Statistical Methods",
+                    "content": "Basic and advanced statistical concepts"
+                },
+                {
+                    "title": "Data Visualization",
+                    "content": "Creating effective visualizations with Python"
+                }
+            ]
+        },
+        {
+            "title": "Machine Learning Basics",
+            "topics": [
+                {
+                    "title": "Supervised Learning",
+                    "content": "Classification and regression techniques"
+                },
+                {
+                    "title": "Unsupervised Learning",
+                    "content": "Clustering and dimensionality reduction"
+                },
+                {
+                    "title": "Model Evaluation",
+                    "content": "Metrics and validation techniques"
+                }
+            ]
+        },
+        {
+            "title": "Practical Applications",
+            "topics": [
+                {
+                    "title": "Real-world Projects",
+                    "content": "Applying concepts to actual problems"
+                },
+                {
+                    "title": "Best Practices",
+                    "content": "Industry standards and workflows"
+                },
+                {
+                    "title": "Career Guidance",
+                    "content": "Preparing for data science roles"
+                }
+            ]
+        }
+    ]
+} 

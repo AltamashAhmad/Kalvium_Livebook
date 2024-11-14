@@ -86,31 +86,17 @@ async function renderCourseDetails() {
 
         document.querySelectorAll('.topic-label').forEach(label => {
             label.addEventListener('click', () => {
-                // Remove previous selection
-                document.querySelectorAll('.topic-label').forEach(l => 
-                    l.classList.remove('topic-selected'));
-                
-                // Add selection to clicked topic
-                label.classList.add('topic-selected');
-                
                 const moduleIndex = label.dataset.module;
                 const topicIndex = label.dataset.topic;
-                const topic = course.modules[moduleIndex].topics[topicIndex];
-                displayTopicContent(topic.content, topic.title);
+                
+                // Redirect to topic page with necessary parameters
+                window.location.href = `topic.html?courseId=${courseId}&moduleIndex=${moduleIndex}&topicIndex=${topicIndex}`;
             });
         });
     } else {
         console.log('No modules found in course data');
         modulesList.innerHTML = '<p>No modules available for this course.</p>';
     }
-}
-
-function displayTopicContent(content, topicTitle) {
-    const contentArea = document.querySelector('.topic-content-display');
-    contentArea.innerHTML = `
-        <h2>${topicTitle}</h2>
-        <div class="content-area">${content}</div>
-    `;
 }
 
 // Initialize the page
