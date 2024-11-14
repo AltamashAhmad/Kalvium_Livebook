@@ -1,0 +1,77 @@
+{
+    "title": "Modern Web Development",
+    "description": "Master full-stack web development with modern technologies and frameworks",
+    "image": "http://localhost:5001/assets/images/app-development.png",
+    "moduleCount": 4,
+    "duration": "12 weeks",
+    "modules": [
+        {
+            "title": "Frontend Fundamentals",
+            "topics": [
+                {
+                    "title": "HTML5 and CSS3",
+                    "content": "Modern HTML5 Features:\n\n1. Semantic Elements\n   • header, nav, main, article\n   • section, aside, footer\n   • figure, figcaption\n\n2. CSS3 Advanced Concepts\n   • Flexbox Layout\n   • CSS Grid\n   • Animations and Transitions\n   • Media Queries\n   • Custom Properties\n\n3. Responsive Design\n   • Mobile-First Approach\n   • Viewport Settings\n   • Fluid Typography\n   • Responsive Images"
+                },
+                {
+                    "title": "JavaScript Essentials",
+                    "content": "Core JavaScript Concepts:\n\n1. Modern JavaScript (ES6+)\n   • Arrow Functions\n   • Destructuring\n   • Spread/Rest Operators\n   • Template Literals\n   • Modules\n\n2. Asynchronous Programming\n   • Promises\n   • Async/Await\n   • Fetch API\n   • Error Handling\n\n3. DOM Manipulation\n   • Selectors\n   • Event Handling\n   • DOM Traversal\n   • Creating Elements"
+                },
+                {
+                    "title": "React Fundamentals",
+                    "content": "React Development:\n\n1. Components\n   • Functional Components\n   • Props and State\n   • Hooks\n   • Lifecycle Methods\n\n2. State Management\n   • Context API\n   • Redux Basics\n   • Local Storage\n\n3. Routing\n   • React Router\n   • Protected Routes\n   • Navigation"
+                }
+            ]
+        },
+        {
+            "title": "Backend Development",
+            "topics": [
+                {
+                    "title": "Node.js Basics",
+                    "content": "Server-side JavaScript with Node.js"
+                },
+                {
+                    "title": "Express.js Framework",
+                    "content": "Building RESTful APIs with Express"
+                },
+                {
+                    "title": "Database Integration",
+                    "content": "Working with MongoDB and Mongoose"
+                }
+            ]
+        },
+        {
+            "title": "Full Stack Integration",
+            "topics": [
+                {
+                    "title": "API Integration",
+                    "content": "Connecting Frontend and Backend"
+                },
+                {
+                    "title": "Authentication",
+                    "content": "JWT and Session Management"
+                },
+                {
+                    "title": "Deployment",
+                    "content": "Deploying Full Stack Applications"
+                }
+            ]
+        },
+        {
+            "title": "Advanced Concepts",
+            "topics": [
+                {
+                    "title": "Testing",
+                    "content": "Unit and Integration Testing"
+                },
+                {
+                    "title": "Performance",
+                    "content": "Optimization and Best Practices"
+                },
+                {
+                    "title": "Security",
+                    "content": "Web Security Best Practices"
+                }
+            ]
+        }
+    ]
+} 
